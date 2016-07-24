@@ -1,19 +1,22 @@
 import java.util.ArrayList;
 import java.util.Comparator;
 
-/**
- * Created by adithyasukumar on 2016-07-23.
- */
 public class kNN {
 
-    // The classification
+    // The final classification
     int classify;
 
-    
+    /**
+     * Constructor.
+     *
+     * @param a (required) the data set in the form {{class, attributeA, attributeB}, {class, attributeA, attributeB}}.
+     * @param b (required) the object to be classified in the form {attributeA, attributeB}.
+     * @param k (required) the number of nearest neighbours to be used in the algorithm
+     */
     public kNN(int[][] a, int[] b, int k) {
 
         // Creates an ArrayList of Double arrays to be filled in the form {label, distance}
-        ArrayList<Double[]> distances = new ArrayList<Double[]>();
+        ArrayList<Double[]> distances = new ArrayList<>();
 
         for(int i = 0; i < a.length; i++){
 
@@ -78,6 +81,11 @@ public class kNN {
 
     }
 
+    /**
+     * Get the classification for the object.
+     *
+     * @return the classification.
+     */
     public int getClassify(){
 
         return classify;

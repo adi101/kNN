@@ -23,7 +23,7 @@ Let's take a part of Fisher's *Iris* data set as an example:
 | 6.3          | 3.3         | 6            | 2.5         | I. virginica  | 
 | 5.8          | 2.7         | 5.1          | 1.9         | I. virginica  | 
 
-First we need to set each species to an integer in order to classify them, and then convert the data set into a nested integer array (in this case, I've set 1 to *setosa*, 2 to *versicolor*, and 3 to *virginica*):
+First we need to set each species to an integer in order to classify them, and then convert the data set into a nested integer array (in this case, I've set *setosa* to 1, *versicolor* to 2, and *virginica* to 3):
 ```Java
 int[][] a = {{1, 51, 35, 14, 02},
 			 {1, 49, 30, 14, 02},

@@ -43,4 +43,4 @@ kNN knn = new kNN(a, b, 2);
 System.out.println(knn.getClassify());
 ```
 
-This outputs *2*, as expected.
+Which outputs *2*.

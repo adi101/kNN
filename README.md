@@ -12,7 +12,7 @@ The algorithm goes through the following steps to classify an object given a dat
 
 ## How to use it
 
-Let's take Fisher's *Iris* data set:
+Let's take a part of Fisher's *Iris* data set as an example:
 
 | Sepal length | Sepal width | Petal length | Petal width | Species       | 
 |--------------|-------------|--------------|-------------|---------------| 
@@ -23,7 +23,7 @@ Let's take Fisher's *Iris* data set:
 | 6.3          | 3.3         | 6            | 2.5         | I. virginica  | 
 | 5.8          | 2.7         | 5.1          | 1.9         | I. virginica  | 
 
-First, we need to set each species to an integer in order to classify them, and then convert the data set into a nested integer array (in this case, I've set 1 to *setosa*, 2 to *versicolor*, and 3 to *virginica*):
+First we need to set each species to an integer in order to classify them, and then convert the data set into a nested integer array (in this case, I've set 1 to *setosa*, 2 to *versicolor*, and 3 to *virginica*):
 ```Java
 int[][] a = {{1, 51, 35, 14, 02},
 			 {1, 49, 30, 14, 02},
@@ -33,7 +33,7 @@ int[][] a = {{1, 51, 35, 14, 02},
 			 {3, 58, 27, 51, 19}}
 ```
 
-Finally, we just initialize the kNN class with an object we want to classify, and print it's classification:
+Now we just initialize the kNN class with an object we want to classify, and print it's classification:
 
 ```Java
 int[] b = {60, 20, 40, 10};

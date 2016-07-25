@@ -30,7 +30,7 @@ int[][] a = {{1, 51, 35, 14, 02},
 			 {2, 73, 20, 47, 14},
 			 {2, 64, 32, 45, 15},
 			 {3, 63, 33, 60, 25},
-			 {3, 58, 27, 51, 19}}
+			 {3, 58, 27, 51, 19}};
 ```
 
 Now we just initialize the kNN class with an object we want to classify, and print it's classification:
